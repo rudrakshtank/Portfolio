@@ -306,5 +306,6 @@ footer {
         display: inline-block;
         width: auto;
         margin: 30px;
+        margin-bottom: 30px;
     }
 }

@@ -11,6 +11,7 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #25273D; /* Dark Grayish Blue */
+    position: relative;
 }
 
 h1, h2 {
@@ -31,7 +32,7 @@ h1, h2 {
 
 .description-container {
     max-width: 600px;
-    margin-left: 150px;
+    margin-left: 20px;
     text-align: left;
 }
 
@@ -42,13 +43,15 @@ h1, h2 {
 
 .floating-container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     background-color: #25273D; /* Dark Grayish Blue */
-    padding: 50px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
     transition: transform 0.2s ease, box-shadow 0.3s ease;
-    margin: 20px 40px;
+    margin: 20px 10px;
+    align-items: center; /* Center items vertically */
 }
 
 .floating-container:hover {
@@ -58,21 +61,21 @@ h1, h2 {
 
 .floating-text {
     color: #FFFFFF;
-    max-width: 500px;
-    margin-top: 30px;
-    margin-left: 50px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center; /* Center text */
 }
 
 .floating-image img {
-    height: 150px;
-    width: 300px;
-    margin-left: 40px;
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 20px;
     border: 2px solid #00A8E8;
 }
 
 #profilepic {
-    margin-left: 50px;
+    margin-left: 20px;
     border-radius: 100px;
     border: 3px solid #F8A100;
 }
@@ -93,7 +96,7 @@ h1, h2 {
     background-color: #414361; /* Muted Purple */
     padding: 20px;
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
     max-width: 600px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
 }
@@ -141,10 +144,25 @@ a:hover {
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
+    background-color: #25273D;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    display: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000; /* Ensure the menu appears above other content */
+}
+
+nav ul.active {
+    display: flex;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 10px 0;
+    text-align: center;
 }
 
 nav ul li a {
@@ -152,6 +170,8 @@ nav ul li a {
     font-weight: 700;
     text-decoration: none;
     transition: color 0.3s ease;
+    padding: 10px;
+    display: block; /* Make the entire area clickable */
 }
 
 nav ul li a:hover {
@@ -160,7 +180,7 @@ nav ul li a:hover {
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
 }
 
 section {
@@ -174,41 +194,36 @@ footer {
     background-color: #25273D;
     color: #FFFFFF;
 }
+
 .contact {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Aligns items to the left */
-    gap: 10px; /* Adds space between the items */
-    margin-left: 15px; /* Adjust margin for alignment */
+    align-items: center;
+    gap: 10px;
 }
 
 .contact a {
     display: flex;
-    align-items: center; /* Aligns icon and text properly */
-    gap: 8px; /* Adds space between icon and text */
+    align-items: center;
+    gap: 8px;
 }
 
-#mailicon{
+#mailicon {
     margin-left: 3px;
 }
 
 .small-block {
-
     display: flex;
-    justify-content: flex-start; /* Aligns items to the left */
-    gap: 20px; /* Space between items */
-    padding-left: 20px; /* Add some left padding if needed */
-    align-content: baseline;
-    max-width: 200px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     padding: 20px;
-    background-color: #25273D; /* Dark Grayish Blue */
+    background-color: #25273D;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
     transition: transform 0.2s ease, box-shadow 0.3s ease;
     text-align: center;
-    margin-right: 20px;
-    margin-left: 10px;
-    margin-bottom: 50px;
+    margin: 10px;
 }
 
 .small-block:hover {
@@ -217,83 +232,70 @@ footer {
 }
 
 .small-block img {
-    height: "180px"; 
-    width: "180px";
+    height: 180px;
+    width: 180px;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .small-block a {
-    color: #00A8E8; /* Sky Blue */
+    color: #00A8E8;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .small-block a:hover {
-    color: #F8A100; /* Orange hover effect */
+    color: #F8A100;
 }
 
-@media (max-width: 768px) {
-    body {
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-img {
-        width: 70%;
-        max-width: 250px;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .navbar a {
-        display: block;
-        padding: 10px;
-    }
-
-    .intro-text {
-        font-size: 18px;
-        width: 90%;
-    }
-}
-
-/* Hamburger Menu (Hidden by Default on Desktop) */
-.hamburger {
+.menu-toggle {
     display: none;
-    font-size: 30px;
-    color: white;
+    background: none;
+    border: none;
+    color: #F8A100;
+    font-size: 24px;
     cursor: pointer;
+    z-index: 1001; /* Ensure the button is above the menu */
 }
 
-/* Mobile Styles */
-@media screen and (max-width: 768px) {
-    .nav-links {
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
         display: none;
+    }
+
+    .hero-content table {
+        display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #12162b;
-        width: 100%;
+        align-items: center;
+    }
+
+    .description-container {
+        margin-left: 0;
         text-align: center;
     }
 
-    .nav-links.active {
-        display: flex;
+    .floating-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .hamburger {
-        display: block;
+    .floating-text {
+        text-align: center;
+    }
+
+    .floating-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .small-block {
+        width: 80%;
+        margin: 10px auto;
     }
 }

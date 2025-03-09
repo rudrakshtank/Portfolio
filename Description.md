@@ -1,0 +1,1 @@
+Welcome to my personal portfolio website, where I showcase my skills, projects, and achievements in Web Development, Programming, and Embedded Systems. This portfolio is designed with a clean and modern UI, ensuring a seamless experience across different devices.

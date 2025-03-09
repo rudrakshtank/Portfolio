@@ -225,11 +225,12 @@ footer {
     margin-left: 3px;
 }
 
+/* Other Links Section */
 .small-block {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px; /* Increased gap between image and link */
     padding: 20px;
     background-color: #25273D;
     border-radius: 10px;
@@ -237,18 +238,14 @@ footer {
     transition: transform 0.2s ease, box-shadow 0.3s ease;
     text-align: center;
     margin: 10px;
-}
-
-.small-block:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.2);
+    width: 80%; /* Adjusted width for better spacing on mobile */
 }
 
 .small-block img {
     height: 180px;
     width: 180px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Added margin below the image */
 }
 
 .small-block a {
@@ -256,10 +253,14 @@ footer {
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
+    padding: 10px; /* Added padding for better clickability */
+    background-color: #414361; /* Added background for better visibility */
+    border-radius: 5px; /* Rounded corners for the link */
 }
 
 .small-block a:hover {
     color: #F8A100;
+    background-color: #00A8E8; /* Change background on hover */
 }
 
 /* Media Queries for Larger Screens */
@@ -305,7 +306,6 @@ footer {
     .small-block {
         display: inline-block;
         width: auto;
-        margin: 30px;
-        margin-bottom: 30px;
+        margin: 10px;
     }
 }

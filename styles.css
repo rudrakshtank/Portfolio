@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1E1E2E; /* Dark navy blue */
+    color: #FFFFFF; /* White text */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #25273D; /* Dark Grayish Blue */
+}
+
+h1, h2 {
+    color: #F8A100; /* Bright Orange */
+}
+
+#name {
+    font-family: "Dancing Script";
+    font-optical-sizing: auto;
+    font-size: xx-large;
+    color: #00A8E8; /* Sky Blue */
+}
+
+#desc {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.description-container {
+    max-width: 600px;
+    margin-left: 150px;
+    text-align: left;
+}
+
+.aboutmedata {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.floating-container {
+    display: flex;
+    gap: 20px;
+    background-color: #25273D; /* Dark Grayish Blue */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    margin: 20px 40px;
+}
+
+.floating-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.2);
+}
+
+.floating-text {
+    color: #FFFFFF;
+    max-width: 500px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.floating-image img {
+    height: 150px;
+    width: 300px;
+    margin-left: 40px;
+    border-radius: 20px;
+    border: 2px solid #00A8E8;
+}
+
+#profilepic {
+    margin-left: 50px;
+    border-radius: 100px;
+    border: 3px solid #F8A100;
+}
+
+#education {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.education-box {
+    background-color: #414361; /* Muted Purple */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.education-box h3, .projecttitle {
+    color: #F8A100; /* Bright Orange */
+    font-size: larger;
+    font-weight: 800;
+}
+
+.education-box p {
+    margin: 10px 0;
+}
+
+.project1 {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #25273D;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.projecttime {
+    font-weight: 600;
+    color: #00A8E8;
+}
+
+a {
+    color: #00A8E8; /* Sky Blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #F8A100; /* Orange Hover Effect */
+}
+
+.projectul {
+    text-align: left;
+    line-height: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #F8A100;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00A8E8; /* Change color on hover */
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #25273D;
+    color: #FFFFFF;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the left */
+    gap: 10px; /* Adds space between the items */
+    margin-left: 15px; /* Adjust margin for alignment */
+}
+
+.contact a {
+    display: flex;
+    align-items: center; /* Aligns icon and text properly */
+    gap: 8px; /* Adds space between icon and text */
+}
+
+#mailicon{
+    margin-left: 3px;
+}
+
+.small-block {
+
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+    gap: 20px; /* Space between items */
+    padding-left: 20px; /* Add some left padding if needed */
+    align-content: baseline;
+    max-width: 200px;
+    padding: 20px;
+    background-color: #25273D; /* Dark Grayish Blue */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+
+.small-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.2);
+}
+
+.small-block img {
+    height: "180px"; 
+    width: "180px";
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.small-block a {
+    color: #00A8E8; /* Sky Blue */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.small-block a:hover {
+    color: #F8A100; /* Orange hover effect */
+}
+
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 70%;
+        max-width: 250px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+    }
+
+    .intro-text {
+        font-size: 18px;
+        width: 90%;
+    }
+}
+

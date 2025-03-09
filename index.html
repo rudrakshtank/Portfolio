@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#other">Other</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <table>
+                <tr>
+                    <td>
+                    <div class="description-container">
+                            <h1>Hello!</h1>
+                            <h2 id="name">I am Rudraksh Tank</h2>
+                            <p id="desc">A passionate Computer Science and Engineering student at LNMIIT, Jaipur, with a strong interest in Web Development, Programming, and Embedded Systems.</p>
+                    </div>
+                    </td>
+                    <td><img src="photo.jpg" alt="rudraksh" width="200" height="200" id="profilepic"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <table class="aboutmedata">
+            <tr>
+                <td>
+                    <div class="floating-container">
+                        <div class="floating-text">
+                            I enjoy building full-stack web applications and have experience in HTML, CSS, JavaScript. 
+                            Currently, I am working towards becoming a MERN stack developer by learning React, MongoDB, Node.js, and Express.
+                        </div>
+                        <div class="floating-image">
+                            <img src="website.jpg" alt="website">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="floating-container">
+                        <div class="floating-image">
+                            <img src="coding.jpeg" alt="coding">
+                        </div>
+                        <div class="floating-text">
+                            Apart from development, I actively participate in coding competitions and love solving algorithmic problems. 
+                            I am also involved in Google Developer Groups (GDG) at LNMIIT as a PR member, where I interact with developers 
+                            and tech enthusiasts, helping me improve my communication skills.
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="floating-container">
+                        <div class="floating-text">
+                            I am always eager to explore new technologies, contribute to projects, and expand my knowledge in full-stack development. 
+                            If you're interested in collaborating or discussing tech, feel free to connect with me!                        
+                        </div>
+                        <div class="floating-image">
+                            <img src="technology.jpg" alt="technology">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+                
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-box">
+                <h3>The LNM Institute of Information Technology</h3>
+                <p><strong>Degree:</strong> Bachelor of Technology in Computer Science & Engineering</p>
+                <p><strong>Duration:</strong> 2024 – 2028</p>
+                <p><strong>Location:</strong> Jaipur, India</p>
+            </div>
+            
+            <div class="education-box">
+                <h3>St. Xavier's School</h3>
+                <p><strong>Degree:</strong> Higher Secondary Education (Class 12th - Science)</p>
+                <p><strong>Duration:</strong> 2022 – 2024</p>
+                <p><strong>Location:</strong> Jaipur, India</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project1">
+            <h3 class="projecttitle">Huddle Landing Page</h3>
+            <p class="projecttime">Jan 2025</p>
+            <ul class="projectul">
+                <li>The Huddle Landing Page is my first web development project, built using pure HTML and CSS, showcasing a collaborative platform concept.</li>
+                <li>It features a clean static layout, including a hero section, feature highlights, and a call-to-action, with future plans for responsiveness.</li>
+                <li>Through this project, I gained hands-on experience in structuring web pages, styling with CSS, and problem-solving during development.</li>
+            </ul>
+                <p>Tech Stack Used: HTML, CSS</p>
+                <p>GitHub Repository Link: <a href="https://github.com/rudrakshtank/Huddle-Landing-Page">GitHub</a></p>
+                <p>Website Live Link: <a href="https://rudrakshtank.github.io/Huddle-Landing-Page/">Live Link</a></p>
+        </div>
+        <div class="project1">
+            <h3 class="projecttitle">RC-BotX</h3>
+            <p class="projecttime">October 2024</p>
+            <ul class="projectul">
+                <li>Built an RC car using NodeMCU (ESP8266/ESP32), enabling wireless control via a web interface or mobile
+                    app. Integrated motor drivers, sensors, and real-time data monitoring.</li>
+                <li>Key Learnings: IoT, Embedded Systems, Wireless Communication, Motor Control</li>
+            </ul>
+                <p>Hardware/Software Used: Arduino Software, NodeMCU</p>
+                <p>GitHub Repository Link: <a href="https://github.com/rudrakshtank/RC_BotX">GitHub</a></p>
+        </div>
+        <div class="project1">
+            <h3 class="projecttitle">Melody Hub</h3>
+            <p class="projecttime">July 2023 - December 2023</p>
+            <ul class="projectul">
+                <li>Hub is a software project that analyzes Spotify data to identify music consumption trends, user preferences, and the evolution of music over time. It provides insights into artists, songs, playlists, and podcasts, benefiting both users and industry professionals.</li>
+                <li>The project visualizes data using line charts, bar graphs, and histograms to analyze trends such as user activity by country, popular genres, and artist rankings.</li>
+            </ul>
+                <p>Tech Stack Used: Python (Pandas, Matplotlib), CSV files, and datasets sourced from Kaggle and Mockaroo.</p>
+                <p>GitHub Repository Link: <a href="https://github.com/rudrakshtank/Melody-Hub">GitHub</a></p>
+                <p>Project SoftCopy Link: <a href="https://drive.google.com/file/d/1cBh_I_9L4-FkCQ8AfK9AzWxNcqlucfX3/view?usp=sharing">SoftCopy</a></p>
+        </div>
+    </section>
+    
+    <section id="other">
+        <h2>Other Links</h2>
+        <div class="small-block" style="display: inline-block;">
+            <img src="resume.jpg" alt="resume" height="180" width="180">
+            <a href="https://drive.google.com/file/d/1aQygij6ps5zRWKreSJoKLciijdtrmQur/view?usp=sharing">Resume Link</a>
+        </div>
+        <div class="small-block" style="display: inline-block;">
+            <img src="github.png" alt="github" height="180" width="180">
+            <a href="https://github.com/rudrakshtank">GitHub Link</a>
+        </div>
+        <div class="small-block" style="display: inline-block;">
+            <img src="leetcode.png" alt="leetcode" height="180" width="180">
+            <a href="https://leetcode.com/u/rudraksh_tank/">LeetCode Link</a>
+        </div>
+        <div class="small-block" style="display: inline-block;">
+            <img src="codeforces.jpg" alt="codeforces" height="180" width="180">
+            <a href="https://codeforces.com/profile/rudrakshtank">CodeForces Link</a>
+        </div>
+        
+    </section>
+    
+    <footer id="contact">
+        <div class="contact">
+            <a href="#" id="mailicon"><img src="icon-email.svg" alt="Gmail"> Gmail</a>
+            <a href="#"><img src="linkedin.png" alt="LinkedIn" height="25px" width="25px">LinkedIn</a>
+        </div>        
+        <p>&copy; 2025 Rudraksh Tank. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

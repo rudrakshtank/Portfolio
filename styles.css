@@ -253,7 +253,7 @@ footer {
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
-    padding: 10px; /* Added padding for better clickability */
+    padding: 30px; /* Added padding for better clickability */
     background-color: #414361; /* Added background for better visibility */
     border-radius: 5px; /* Rounded corners for the link */
 }

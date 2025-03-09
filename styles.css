@@ -1,3 +1,4 @@
+/* Mobile-First Base Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -31,9 +32,10 @@ h1, h2 {
 }
 
 .description-container {
-    max-width: 600px;
-    margin-left: 20px;
-    text-align: left;
+    max-width: 100%; /* Full width on mobile */
+    text-align: center; /* Center text on mobile */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding for better spacing */
 }
 
 .aboutmedata {
@@ -75,9 +77,10 @@ h1, h2 {
 }
 
 #profilepic {
-    margin-left: 20px;
+    margin: 20px auto; /* Center the profile picture */
     border-radius: 100px;
     border: 3px solid #F8A100;
+    display: block; /* Ensure it's centered */
 }
 
 #education {
@@ -141,23 +144,23 @@ a:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* Navigation Menu for Mobile */
 nav ul {
     list-style: none;
-    display: flex;
+    display: none; /* Hidden by default on mobile */
     flex-direction: column;
     background-color: #25273D;
     position: absolute;
     top: 70px;
     right: 0;
     width: 100%;
-    display: none;
     padding: 0;
     margin: 0;
     z-index: 1000; /* Ensure the menu appears above other content */
 }
 
 nav ul.active {
-    display: flex;
+    display: flex; /* Show menu when active */
 }
 
 nav ul li {
@@ -176,6 +179,16 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #00A8E8; /* Change color on hover */
+}
+
+.menu-toggle {
+    display: block; /* Show hamburger menu on mobile */
+    background: none;
+    border: none;
+    color: #F8A100;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001; /* Ensure the button is above the menu */
 }
 
 .hero {
@@ -249,53 +262,49 @@ footer {
     color: #F8A100;
 }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #F8A100;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1001; /* Ensure the button is above the menu */
-}
-
-/* Media Queries for Mobile Responsiveness */
-@media (max-width: 768px) {
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
     .menu-toggle {
-        display: block;
+        display: none; /* Hide hamburger menu on larger screens */
     }
 
     nav ul {
-        display: none;
+        display: flex; /* Show navigation links on larger screens */
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        width: auto;
     }
 
-    .hero-content table {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    nav ul li {
+        margin: 0 15px;
     }
 
     .description-container {
-        margin-left: 0;
-        text-align: center;
+        max-width: 600px;
+        margin-left: 150px;
+        text-align: left;
     }
 
     .floating-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
     }
 
     .floating-text {
-        text-align: center;
+        text-align: left;
+        margin-left: 50px;
     }
 
     .floating-image img {
-        width: 100%;
-        height: auto;
+        width: 300px;
+        height: 150px;
+        margin-left: 40px;
     }
 
     .small-block {
-        width: 80%;
-        margin: 10px auto;
+        display: inline-block;
+        width: auto;
+        margin: 10px;
     }
 }
